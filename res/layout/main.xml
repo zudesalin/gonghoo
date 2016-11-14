@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F4F4F4">
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/banner"/>
+            <LinearLayout android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:paddingTop="10dp"
+                          android:paddingLeft="10dp"
+                            android:paddingBottom="10dp">
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                    <ImageButton android:layout_width="45dp"
+                                 android:layout_height="45dp"
+                                 android:background="@drawable/jianghu_type_home_icon"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:textColor="#000000"
+                              android:text="首页"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                    <ImageButton android:layout_width="45dp"
+                                 android:layout_height="45dp"
+                                 android:background="@drawable/jianghu_type_huiyi_icon"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:textColor="#000000"
+                              android:text="会议"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                    <ImageButton android:layout_width="45dp"
+                                 android:layout_height="45dp"
+                                 android:background="@drawable/jianghu_type_peixun_icon"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:textColor="#000000"
+                              android:text="培训"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                    <ImageButton android:layout_width="45dp"
+                                 android:layout_height="45dp"
+                                 android:background="@drawable/jianghu_type_juhui_icon"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:textColor="#000000"
+                              android:text="聚会"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                    <ImageButton android:layout_width="45dp"
+                                 android:layout_height="45dp"
+                                 android:background="@drawable/jianghu_type_zhaomu_icon"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:textColor="#000000"
+                              android:text="招募"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                    <ImageButton android:layout_width="45dp"
+                                 android:layout_height="45dp"
+                                 android:background="@drawable/jianghu_type_more_icon"/>
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:paddingTop="5dp"
+                              android:textColor="#000000"
+                              android:text="更多"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/jianghu_zuijh_bg">
+                <com.gonghoo.view.RoundRectImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/banner2"
+                        android:background="@drawable/shape"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/activity_img"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="10dp">
+                <ImageView android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/jianghubang"
+                           android:layout_gravity="center_vertical"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FB8D3F"
+                        android:textSize="20dp"
+                        android:text="·江湖榜"
+                        android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+            <com.gonghoo.view.ListViewFroScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/activityListView"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:dividerHeight="10dp"
+                    android:listSelector="#FFFFFF"
+                    android:divider="#F4F4F4">
+            </com.gonghoo.view.ListViewFroScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
