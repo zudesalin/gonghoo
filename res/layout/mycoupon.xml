@@ -3,9 +3,11 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <com.gonghoo.view.ListViewFroScrollView
+    <ListView
+            android:divider="#F4F4F4"
             android:id="@+id/myCouponListView"
+            android:background="#F4F4F4"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-    </com.gonghoo.view.ListViewFroScrollView>
+    </ListView>
 </LinearLayout>

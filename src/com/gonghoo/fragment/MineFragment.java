@@ -39,7 +39,7 @@ public class MineFragment extends Fragment implements View.OnClickListener{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.mine,container,false);
-        url= Configure.getPropertiesURL(context,"url")+"/contacts/userCenterData.action?userId=934";
+        url= Configure.getPropertiesURL(context)+"/contacts/userCenterData.action?userId=934";
         loadData();
         return view;
     }

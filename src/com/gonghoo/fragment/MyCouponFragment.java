@@ -4,13 +4,19 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+import com.android.volley.VolleyError;
 import com.gonghoo.R;
-import com.gonghoo.view.ListViewFroScrollView;
+import com.gonghoo.utils.Configure;
+import com.gonghoo.volleyInterface.VolleyInterface;
+import com.gonghoo.volleyInterface.VolleyRequest;
+import org.json.JSONObject;
 
 /**
  * Created by zudesalin on 2016/11/16.
@@ -19,18 +25,34 @@ import com.gonghoo.view.ListViewFroScrollView;
 public class MyCouponFragment extends Fragment {
     private View view=null;
     private Context context;
-    ListViewFroScrollView listViewFroScrollView;
+    ListView listView;
+    String url= "";
     public MyCouponFragment(Context context){
         this.context=context;
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.mycoupon,container,false);
-        listViewFroScrollView= (ListViewFroScrollView) view.findViewById(R.id.myCouponListView);
-        listViewFroScrollView.setAdapter(new CustomerAdapter());
+        url=Configure.getPropertiesURL(context)+"/personCenter/getProfitDetailLogList.action?userId=934";
+        loadData();
+        listView= (ListView) view.findViewById(R.id.myCouponListView);
+        listView.setAdapter(new CustomerAdapter());
         return view;
     }
 
+    private void loadData(){
+        VolleyRequest.jsonPost(context, url, null, "mycoupon", new VolleyInterface(context,VolleyInterface.listener,VolleyInterface.errorListener) {
+            @Override
+            public void onSuccess(JSONObject jsonObject) {
+                Log.i("zzz",jsonObject.toString());
+            }
+
+            @Override
+            public void onError(VolleyError volleyError) {
+
+            }
+        });
+    }
     /**
      * 适配器
      */
