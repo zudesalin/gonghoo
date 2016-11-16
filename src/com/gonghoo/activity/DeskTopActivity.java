@@ -91,7 +91,7 @@ public class DeskTopActivity extends FragmentActivity {
                 fragmentTransaction=mFragmentManager.beginTransaction();
                 MineFragment mineFragment=null;
                 if(mineFragment==null){
-                    mineFragment=new MineFragment(context,fragmentTransaction);
+                    mineFragment=new MineFragment(context);
                 }
                 fragmentTransaction.add(R.id.deskFrameLayout,mineFragment);
                 //fragmentTransaction.attach(mineFragment);

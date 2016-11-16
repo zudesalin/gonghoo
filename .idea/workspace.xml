@@ -52,26 +52,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6faa3eab-52a6-4595-93fd-6e101c0a5c24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.navigation/gonghoo/raw/main.nvg.xml" afterPath="$PROJECT_DIR$/.navigation/gonghoo/raw/main.nvg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gonghoo.iml" afterPath="$PROJECT_DIR$/gonghoo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/jianghu_type_button.xml" afterPath="$PROJECT_DIR$/res/drawable-hdpi/jianghu_type_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/shape.xml" afterPath="$PROJECT_DIR$/res/drawable-hdpi/shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/jianghu_item.xml" afterPath="$PROJECT_DIR$/res/layout/jianghu_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/loading.xml" afterPath="$PROJECT_DIR$/res/layout/loading.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/activity/loadingActivity.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/activity/loadingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/pojo/Activities.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/pojo/Activities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/utils/BasicPost.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/utils/BasicPost.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/utils/CustomHttpClient.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/utils/CustomHttpClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/utils/utils.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/utils/utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/view/ListViewFroScrollView.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/view/ListViewFroScrollView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/view/RoundRectImageView.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/view/RoundRectImageView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java" />
     </list>
     <ignored path="gonghoo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,13 +80,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MineFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MineFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30769232">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.661017">
+              <caret line="107" column="70" selection-start-line="107" selection-start-column="70" selection-end-line="107" selection-end-column="70" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1254#1255#0" expanded="true" />
+                <element signature="e#1290#1291#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,14 +150,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeskTopActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DeskTopActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.63548833">
+              <caret line="93" column="57" selection-start-line="93" selection-start-column="57" selection-end-line="93" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,8 +235,8 @@
         <option value="$PROJECT_DIR$/res/layout/mycoupon_item.xml" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/mine.xml" />
-        <option value="$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java" />
       </list>
     </option>
   </component>
@@ -1059,12 +1041,12 @@
       <workItem from="1479176217895" duration="3181000" />
       <workItem from="1479189371843" duration="12968000" />
       <workItem from="1479256136581" duration="17122000" />
-      <workItem from="1479277471110" duration="738000" />
+      <workItem from="1479277471110" duration="1797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210081000" />
+    <option name="totallyTimeSpent" value="211140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1076,7 +1058,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1554" height="916" extended-state="7" />
+    <frame x="-8" y="-8" width="1554" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1507,6 +1489,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26814517">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1588,16 +1571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="47" selection-start-line="91" selection-start-column="47" selection-end-line="91" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/mine.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1611,11 +1584,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.661017">
+          <caret line="107" column="70" selection-start-line="107" selection-start-column="70" selection-end-line="107" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63548833">
+          <caret line="93" column="57" selection-start-line="93" selection-start-column="57" selection-end-line="93" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,17 +25,15 @@ import org.json.JSONObject;
  * Created by zudesalin on 2016/11/15.
  */
 @SuppressLint("ValidFragment")
-public class MineFragment extends Fragment {
+public class MineFragment extends Fragment implements View.OnClickListener{
     View view=null;
     private Context context;
-    private FragmentTransaction transaction;
     String url="";
     RoundRectImageView mine_headeImg;
     TextView mine_integralLevel_tv=null,friendsCount_tv=null,integralCount_tv=null,cardCount_tv,userName_tv,mine_job_tv,mine_profit_tv,contectionsCount_tv;
     LinearLayout cardCount_ly=null;
-    public MineFragment(Context context,FragmentTransaction transaction){
+    public MineFragment(Context context){
         this.context=context;
-        this.transaction=transaction;
     }
 
     @Override
@@ -50,16 +49,7 @@ public class MineFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         //注册点击事件
         cardCount_ly= (LinearLayout) getActivity().findViewById(R.id.cardCount_ly);
-        cardCount_ly.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MyCouponFragment myCouponFragment = new MyCouponFragment(context);
-                transaction.add(myCouponFragment, "myCouponFragment");
-                transaction.replace(R.id.deskFrameLayout, myCouponFragment);
-                transaction.commit();
-            }
-
-        });
+        cardCount_ly.setOnClickListener(this);
     }
 
     private void initView(){
@@ -109,15 +99,16 @@ public class MineFragment extends Fragment {
      * 点击事件
      * @param v
      */
-/*    @Override
+    @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.cardCount_ly:
                 MyCouponFragment myCouponFragment=new MyCouponFragment(context);
-                transaction.add(myCouponFragment,"myCouponFragment");
-                transaction.replace(R.id.deskFrameLayout,myCouponFragment);
+                FragmentManager fm=getActivity().getSupportFragmentManager();
+                FragmentTransaction transaction=fm.beginTransaction();
+                transaction.add(R.id.deskFrameLayout,myCouponFragment);
                 transaction.commit();
                 break;
         }
-    }*/
+    }
 }
