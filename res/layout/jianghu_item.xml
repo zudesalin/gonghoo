@@ -4,8 +4,8 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:background="@drawable/shape"
-              android:contentDescription="江湖item信息"
->
+              android:baselineAligned="false"
+              android:contentDescription="@string/jiang_description">
     <LinearLayout android:layout_width="match_parent"
                   android:layout_height="match_parent"
                   android:layout_marginLeft="10dp"
@@ -24,15 +24,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+            android:id="@+id/jianghu_right_LinearLayout"
             android:paddingLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1" >
+            android:layout_weight="1">
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/activity_title"
                 android:textColor="#737373"
                 android:textSize="7pt"
+                android:layout_marginTop="10dp"
                 android:text="投融资大会"
         />
         <LinearLayout
@@ -72,14 +73,14 @@
                        android:src="@drawable/jianghu_people_icon"
             />
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/activity_people"
-                android:textColor="#ff6633"
-                android:textSize="6pt"
-                android:text="20"
-                android:paddingLeft="3dp"
-        />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_people"
+                    android:textColor="#ff6633"
+                    android:textSize="6pt"
+                    android:text="20"
+                    android:paddingLeft="3dp"
+            />
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

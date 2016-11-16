@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+              android:orientation="vertical"
+                android:id="@+id/popWindow_RelativeLayout">
+
+    <ListView
+            android:id="@+id/popWindow_listView"
+            android:listSelector="#FFFFFF"
+            android:divider="#F4F4F4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:text="立即报名"
+            android:layout_width="match_parent"
+            android:layout_below="@id/popWindow_listView"
+            android:textColor="@android:color/white"
+            android:background="#FF6633"
+            android:onClick="onClick"
+            android:id="@+id/jianghu_detail_ticketchoosed_baoming"
+            android:layout_height="55dp"/>
+</LinearLayout>

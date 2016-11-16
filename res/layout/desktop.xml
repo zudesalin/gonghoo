@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4F4F4">
+        <FrameLayout
+                android:layout_weight="1"
+                android:id="@+id/deskFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </FrameLayout>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"/>
+        <include layout="@layout/main_footer"
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                android:layout_alignBottom="@id/deskFrameLayout"
+        />
+</LinearLayout>
+

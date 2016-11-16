@@ -11,18 +11,20 @@ import com.gonghoo.R;
 /**
  * Created by zudesalin on 2016/7/27.
  */
-public class loadingActivity extends Activity{
-    ImageView imageView=null;
+public class loadingActivity extends Activity {
+    ImageView imageView = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loading);
-        imageView=(ImageView) findViewById(R.id.loading);
-        AlphaAnimation animation=new AlphaAnimation(0.3f, 1.0f);
-        animation.setDuration(3000);
+        imageView = (ImageView) findViewById(R.id.loading);
+        AlphaAnimation animation = new AlphaAnimation(0.3f, 1.0f);
+        animation.setDuration(2000);
         imageView.startAnimation(animation);
         animation.setAnimationListener(new LoadAnimationListener());
     }
+
     private class LoadAnimationListener implements Animation.AnimationListener {
         @Override
         public void onAnimationStart(Animation animation) {
@@ -31,7 +33,7 @@ public class loadingActivity extends Activity{
 
         @Override
         public void onAnimationEnd(Animation animation) {
-            Intent intent=new Intent(loadingActivity.this,MainActivity.class);
+            Intent intent = new Intent(loadingActivity.this, JianghuActivity.class);
             startActivity(intent);
         }
 

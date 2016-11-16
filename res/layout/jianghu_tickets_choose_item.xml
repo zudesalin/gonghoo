@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:gravity="center_horizontal">
+        <TextView
+                android:textColor="#777777"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="不开发票"
+                android:gravity="left|center"
+                android:id="@+id/jianghu_attend_tickets_item_type"
+                android:layout_height="40dp"/>
+        <TextView
+                android:textColor="#777777"
+                android:text="×1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:id="@+id/jianghu_attend_tickets_item_num"
+                android:layout_height="40dp"/>
+        <TextView
+                android:textColor="#777777"
+                android:text="￥2.00"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="right|center"
+                android:id="@+id/jianghu_attend_tickets_unitPrice"
+                android:layout_height="40dp"/>
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"/>
+</LinearLayout>
