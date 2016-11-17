@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.*;
 import com.android.volley.VolleyError;
 import com.gonghoo.R;
+import com.gonghoo.activity.DeskTopActivity;
 import com.gonghoo.activity.JianghuDetailActivity;
 import com.gonghoo.pojo.Activities;
 import com.gonghoo.utils.utils;
@@ -35,7 +36,7 @@ import java.util.List;
  * Created by zudesalin on 2016/11/15.
  */
 @SuppressLint("ValidFragment")
-public class JianghuFragment extends Fragment implements ListViewFroScrollView.ILoadingData {
+public class JianghuFragment extends BackHandledFragment implements ListViewFroScrollView.ILoadingData {
     ListViewFroScrollView activititListView = null;
     List<Activities> activitiesList = new ArrayList<Activities>();
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy年MM月dd日");
@@ -166,6 +167,13 @@ public class JianghuFragment extends Fragment implements ListViewFroScrollView.I
         //获取更多数据，通知ListView更新数据
         pageNo++;
         loadData();
+    }
+
+    @Override
+    public boolean onBackPressed() {
+       ((DeskTopActivity) getActivity()).iconChoolsed(0);
+        getActivity().getSupportFragmentManager().popBackStack();
+        return true;
     }
 
     class listViewAdapter extends BaseAdapter {

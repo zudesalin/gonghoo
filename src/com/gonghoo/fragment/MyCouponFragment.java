@@ -3,6 +3,8 @@ package com.gonghoo.fragment;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -13,6 +15,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import com.android.volley.VolleyError;
 import com.gonghoo.R;
+import com.gonghoo.activity.DeskTopActivity;
 import com.gonghoo.utils.Configure;
 import com.gonghoo.volleyInterface.VolleyInterface;
 import com.gonghoo.volleyInterface.VolleyInterfaceStr;
@@ -26,7 +29,7 @@ import org.json.JSONObject;
  * Created by zudesalin on 2016/11/16.
  */
 @SuppressLint("ValidFragment")
-public class MyCouponFragment extends Fragment {
+public class MyCouponFragment extends BackHandledFragment {
     private View view=null;
     private Context context;
     ListView listView;
@@ -39,18 +42,40 @@ public class MyCouponFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.mycoupon,container,false);
         url=Configure.getPropertiesURL(context)+"/personCenter/showCouponList.action?userId=934";
-        loadData();
+        new Thread(runnable).start();
         listView= (ListView) view.findViewById(R.id.myCouponListView);
-        listView.setAdapter(new CustomerAdapter());
+
         return view;
     }
+    Handler handler=new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if(jsonArray.length()==0){
+                view.findViewById(R.id.mycoupon_noData).setVisibility(View.VISIBLE);
+                listView.setVisibility(View.GONE);
+            }else{
+                view.findViewById(R.id.mycoupon_noData).setVisibility(View.GONE);
+                listView.setAdapter(new CustomerAdapter());
+            }
+        }
+    };
 
+
+    Runnable runnable=new Runnable() {
+        @Override
+        public void run() {
+            loadData();
+        }
+    };
     private void loadData(){
         VolleyStrRequest.strGet(context,url,"mycouponList", new VolleyInterfaceStr(VolleyInterfaceStr.listener, VolleyInterfaceStr.errorListener) {
             @Override
             public void onSuccess(String str) {
                 try {
                     jsonArray=new JSONArray(str);
+                    Message message=Message.obtain();
+                    handler.sendMessage(message);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -58,10 +83,19 @@ public class MyCouponFragment extends Fragment {
 
             @Override
             public void onError(VolleyError volleyError) {
+                Log.i("zzz",volleyError.getMessage());
                volleyError.printStackTrace();
             }
         });
     }
+
+    @Override
+    public boolean onBackPressed() {
+        ((DeskTopActivity) getActivity()).iconChoolsed(2);
+        getActivity().getSupportFragmentManager().popBackStack();
+        return true;
+    }
+
     /**
      * 适配器
      */

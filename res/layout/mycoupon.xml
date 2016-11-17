@@ -2,12 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
+              android:background="#FFFFFF"
               android:layout_height="match_parent">
     <ListView
+            android:clickable="false"
             android:divider="#F4F4F4"
             android:id="@+id/myCouponListView"
             android:background="#F4F4F4"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
     </ListView>
+    <ImageView
+            android:id="@+id/mycoupon_noData"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/no_data"/>
 </LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="5dp"
+              android:background="#000"
+              android:paddingBottom="5dp">
+    <LinearLayout
+            android:id="@+id/main_footer_jianghu_layout"
+            android:onClick="click"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:id="@+id/main_footer_jianghu_bt"
+                android:background="@android:color/transparent"
+                android:src="@drawable/nav_back_orangle"
+                android:layout_width="14dp"
+                android:layout_height="14dp"/>
+        <TextView
+                android:id="@+id/main_footer_jianghu_tv"
+                android:text="返回"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/main_footer_daxia_layout"
+            android:onClick="click"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/main_footer_daxia_tv"
+                android:text="我的"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/main_footer_mine_layout"
+            android:onClick="click"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:id="@+id/main_footer_mine_bt"
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+

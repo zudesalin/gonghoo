@@ -11,13 +11,15 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import com.gonghoo.R;
+import com.gonghoo.fragment.BackHandledFragment;
 import com.gonghoo.fragment.JianghuFragment;
 import com.gonghoo.fragment.MineFragment;
+import com.gonghoo.todo.BackHandledInterface;
 
 /**
  * Created by zudesalin on 2016/11/15.
  */
-public class DeskTopActivity extends FragmentActivity {
+public class DeskTopActivity extends FragmentActivity implements BackHandledInterface {
     Context context=DeskTopActivity.this;
     TextView  main_footer_jianghu_tv,main_footer_daxia_tv,main_footer_mine_tv;
     ImageButton main_footer_jianghu_bt,main_footer_daxia_bt,main_footer_mine_bt;
@@ -46,12 +48,12 @@ public class DeskTopActivity extends FragmentActivity {
     }
     private void initFragment(){
         fragmentTransaction=mFragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.deskFrameLayout,jianghuFragment);
+        fragmentTransaction.add(R.id.deskFrameLayout,jianghuFragment,"jhFragment");
         iconChoolsed(0);
         fragmentTransaction.commit();
     }
 
-    private void iconChoolsed(int index){
+    public void iconChoolsed(int index){
         main_footer_jianghu_tv.setTextColor(Color.parseColor("#999999"));
         main_footer_daxia_tv.setTextColor(Color.parseColor("#999999"));
         main_footer_mine_tv.setTextColor(Color.parseColor("#999999"));
@@ -93,12 +95,32 @@ public class DeskTopActivity extends FragmentActivity {
                 if(mineFragment==null){
                     mineFragment=new MineFragment(context);
                 }
-                fragmentTransaction.add(R.id.deskFrameLayout,mineFragment);
+                fragmentTransaction.add(R.id.deskFrameLayout,mineFragment,"mineFragment");
+                fragmentTransaction.addToBackStack("jhFragment");
                 //fragmentTransaction.attach(mineFragment);
                 iconChoolsed(2);
                 fragmentTransaction.commit();
                 iconChoolsed(2);
                 break;
+        }
+    }
+
+    private BackHandledFragment mBackHandedFragment;
+    private boolean hadIntercept;
+
+    @Override
+    public void setSelectedFragment(BackHandledFragment selectedFragment) {
+        this.mBackHandedFragment = selectedFragment;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(mBackHandedFragment == null || !mBackHandedFragment.onBackPressed()){
+            if(getSupportFragmentManager().getBackStackEntryCount() == 0){
+                super.onBackPressed();
+            }else{
+                getSupportFragmentManager().popBackStack();
+            }
         }
     }
 }

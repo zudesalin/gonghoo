@@ -3,6 +3,7 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:clickable="true"
               android:background="#F4F4F4" >
        <LinearLayout
                android:background="@drawable/mine_top_bgimage"
@@ -177,6 +178,7 @@
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:id="@+id/main_personInfo_ly"
             android:layout_height="50dp">
         <ImageView
                 android:layout_marginLeft="10dp"
