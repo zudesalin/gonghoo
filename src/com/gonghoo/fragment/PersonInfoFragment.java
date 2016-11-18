@@ -15,8 +15,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.android.volley.VolleyError;
 import com.gonghoo.R;
+import com.gonghoo.activity.DeskTopActivity;
 import com.gonghoo.utils.Configure;
 import com.gonghoo.utils.CustomProgressDialog;
 import com.gonghoo.view.RoundRectImageView;
@@ -30,7 +32,7 @@ import org.json.JSONObject;
  * Created by zudesalin on 2016/11/15.
  */
 @SuppressLint("ValidFragment")
-public class PersonInfoFragment extends Fragment implements View.OnClickListener{
+public class PersonInfoFragment extends BackHandledFragment implements View.OnClickListener {
     View view=null;
     private Context context;
     ImageView personInfo_headImg=null,personInfo_QRImg=null;
@@ -106,5 +108,20 @@ public class PersonInfoFragment extends Fragment implements View.OnClickListener
                 transaction.commit();
                 break;
         }
+    }
+
+    @Override
+    public boolean onBackPressed() {
+      /*  ((DeskTopActivity) getActivity()).iconChoolsed(2);
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.show(new MineFragment(context));
+        transaction.commit();
+        return  true;*/
+        if (getActivity().getSupportFragmentManager() != null) {
+            getActivity().getSupportFragmentManager().popBackStack();
+        } else {
+            Toast.makeText(context, "再次点击退出", Toast.LENGTH_SHORT).show();
+        }
+        return true;
     }
 }

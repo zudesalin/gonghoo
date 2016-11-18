@@ -51,47 +51,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6faa3eab-52a6-4595-93fd-6e101c0a5c24" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$anim.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$attr.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$drawable.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$id.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$layout.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$string.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$style.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/DeskTopActivity.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/DeskTopActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/JianghuActivity$listViewAdapter.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/JianghuActivity$listViewAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/JianghuDetailActivity$3.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/JianghuDetailActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/JianghuDetailActivity.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/JianghuDetailActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/MainActivity$listViewAdapter.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/MainActivity$listViewAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/loadingActivity$LoadAnimationListener.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/activity/loadingActivity$LoadAnimationListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$1.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$2.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$3.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$4.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$5.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$listViewAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$listViewAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$listViewAdapter.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment$listViewAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/JianghuFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MineFragment$1.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MineFragment$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MineFragment$2.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MineFragment$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MineFragment.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MineFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$1.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$2.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$3.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$CustomerAdapter.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment$CustomerAdapter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/MyCouponFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/utils/ImageViewLoader$LoadImageView.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/utils/ImageViewLoader$LoadImageView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/PersonInfoFragment.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/fragment/PersonInfoFragment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/utils/CustomProgressDialog.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/utils/CustomProgressDialog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/view/ListViewFroScrollView.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/view/ListViewFroScrollView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/volleyInterface/VolleyStrRequest.class" afterPath="$PROJECT_DIR$/out/production/gonghoo/com/gonghoo/volleyInterface/VolleyStrRequest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/gonghoo.apk" afterPath="$PROJECT_DIR$/out/production/gonghoo/gonghoo.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/gonghoo/gonghoo.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/gonghoo/gonghoo.unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/desktop.xml" afterPath="$PROJECT_DIR$/res/layout/desktop.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/mine.xml" afterPath="$PROJECT_DIR$/res/layout/mine.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/mycoupon.xml" afterPath="$PROJECT_DIR$/res/layout/mycoupon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/fragment/JianghuFragment.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/fragment/JianghuFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/volleyInterface/VolleyStrRequest.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/volleyInterface/VolleyStrRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gonghoo/fragment/PersonInfoFragment.java" afterPath="$PROJECT_DIR$/src/com/gonghoo/fragment/PersonInfoFragment.java" />
     </list>
     <ignored path="gonghoo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -118,42 +102,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MineFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MineFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4026975">
-              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-              <folding>
-                <element signature="e#1576#2783#0" expanded="true" />
-                <element signature="e#2782#2783#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonInfoFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/PersonInfoFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
+              <caret line="170" column="172" selection-start-line="170" selection-start-column="172" selection-end-line="170" selection-end-column="172" />
               <folding>
-                <element signature="e#1399#1400#0" expanded="true" />
-                <element signature="e#1435#1436#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1874#1875#0" expanded="false" />
+                <element signature="e#1910#1911#0" expanded="false" />
+                <element signature="e#1970#3177#0" expanded="false" />
+                <element signature="e#3176#3177#0" expanded="false" />
+                <element signature="e#5916#5917#0" expanded="false" />
+                <element signature="e#5967#5968#0" expanded="false" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="person_info.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/person_info.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.896552">
-              <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -161,9 +124,22 @@
         <entry file="file://$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="32" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+              <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mine.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/mine.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49457702">
+              <caret line="270" column="39" selection-start-line="270" selection-start-column="39" selection-end-line="270" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -238,16 +214,16 @@
         <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/BackHandledFragment.java" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/todo/BackHandledInterface.java" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/JianghuFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/mycoupon.xml" />
         <option value="$PROJECT_DIR$/res/layout/main_top.xml" />
         <option value="$PROJECT_DIR$/res/layout/desktop.xml" />
-        <option value="$PROJECT_DIR$/res/layout/mine.xml" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/PeosonInfoFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/person_info.xml" />
+        <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/PersonInfoFragment.java" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/person_info.xml" />
         <option value="$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java" />
+        <option value="$PROJECT_DIR$/res/layout/mine.xml" />
       </list>
     </option>
   </component>
@@ -485,6 +461,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="activity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gonghoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gonghoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gonghoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gonghoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1077,11 +1085,12 @@
       <workItem from="1479352697970" duration="445000" />
       <workItem from="1479353182916" duration="660000" />
       <workItem from="1479354594301" duration="16887000" />
+      <workItem from="1479430785711" duration="14558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242531000" />
+    <option name="totallyTimeSpent" value="257089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1094,30 +1103,29 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1554" height="916" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.48661312" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4351852" sideWeight="0.4236948" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25635877" sideWeight="0.50690335" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3227513" sideWeight="0.43239626" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27513227" sideWeight="0.437751" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28952506" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17328042" sideWeight="0.48393574" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.4759036" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.47858098" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299866" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27513227" sideWeight="0.56760377" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27513227" sideWeight="0.562249" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25635877" sideWeight="0.49309665" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25635877" sideWeight="0.49309665" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.48728245" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25635877" sideWeight="0.50642204" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24074075" sideWeight="0.7021419" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32010582" sideWeight="0.6987952" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1128,6 +1136,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="-23" y="306" width="1353" height="716" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.48728245" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1147,43 +1156,30 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="31" />
+      <option name="time" value="35" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="gonghoo">
+        <watch expression="getActivity().getSupportFragmentManager()" language="JAVA" custom="" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/ticket_choose_pop_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2892768">
-          <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gonghoo/view/InnerScrollView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66230935">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Android/sdk/sources/android-19/org/json/JSONObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1589242">
-          <caret line="354" column="0" selection-start-line="354" selection-start-column="0" selection-end-line="354" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4934335">
@@ -1462,16 +1458,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/app_loading0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/anim/customer_process_animation.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.7142856">
           <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1515,22 +1505,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
-          <folding>
-            <element signature="e#1680#2165#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gonghoo/todo/BackHandledInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1567,39 +1545,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/mine.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9655173">
-          <caret line="180" column="26" selection-start-line="180" selection-start-column="26" selection-end-line="180" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/PersonInfoFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="32" selection-start-line="83" selection-start-column="32" selection-end-line="83" selection-end-column="32" />
-          <folding>
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="32" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+          <caret line="122" column="71" selection-start-line="122" selection-start-column="71" selection-end-line="122" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/person_info.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.896552">
+        <state vertical-scroll-proportion="-0.3275862">
           <caret line="65" column="39" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
           <folding />
         </state>
@@ -1608,15 +1564,73 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/MyCouponFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="9" selection-start-line="136" selection-start-column="9" selection-end-line="136" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-19/android/animation/ObjectAnimator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="245" column="27" selection-start-line="245" selection-start-column="13" selection-end-line="245" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Android/sdk/sources/android-19/android/animation/PropertyValuesHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="33" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/app_loading1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/app_loading0.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gonghoo/activity/DeskTopActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gonghoo/fragment/MineFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4026975">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="170" column="172" selection-start-line="170" selection-start-column="172" selection-end-line="170" selection-end-column="172" />
           <folding>
-            <element signature="e#1576#2783#0" expanded="true" />
-            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1874#1875#0" expanded="false" />
+            <element signature="e#1910#1911#0" expanded="false" />
+            <element signature="e#1970#3177#0" expanded="false" />
+            <element signature="e#3176#3177#0" expanded="false" />
+            <element signature="e#5916#5917#0" expanded="false" />
+            <element signature="e#5967#5968#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/mine.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49457702">
+          <caret line="270" column="39" selection-start-line="270" selection-start-column="39" selection-end-line="270" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>

@@ -1,5 +1,8 @@
 package com.gonghoo.fragment;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.PropertyValuesHolder;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
@@ -12,8 +15,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.android.volley.VolleyError;
 import com.gonghoo.R;
 import com.gonghoo.utils.Configure;
@@ -38,7 +43,9 @@ public class MineFragment extends Fragment implements View.OnClickListener{
     RoundRectImageView mine_headeImg;
     private JSONObject jsonObject=null;
     TextView mine_integralLevel_tv=null,friendsCount_tv=null,integralCount_tv=null,cardCount_tv,userName_tv,mine_job_tv,mine_profit_tv,contectionsCount_tv;
-    LinearLayout cardCount_ly=null,main_personInfo_ly=null;
+    LinearLayout cardCount_ly = null, main_personInfo_ly = null, main_jianghu_ly = null, main_signupActivity_ly, main_createActivity_ly, main_myinvite_ly, main_myshare_ly, mine_other_ly;
+    ImageView main_jianghu_jiantou = null;
+    boolean rotation = false;//是否旋转
     public MineFragment(Context context){
         this.context=context;
     }
@@ -81,8 +88,15 @@ public class MineFragment extends Fragment implements View.OnClickListener{
         //注册点击事件
         cardCount_ly= (LinearLayout) getActivity().findViewById(R.id.cardCount_ly);
         main_personInfo_ly= (LinearLayout) getActivity().findViewById(R.id.main_personInfo_ly);
+        main_jianghu_ly = (LinearLayout) getActivity().findViewById(R.id.main_jianghu_ly);
         cardCount_ly.setOnClickListener(this);
         main_personInfo_ly.setOnClickListener(this);
+        main_jianghu_ly.setOnClickListener(this);
+        main_signupActivity_ly = (LinearLayout) view.findViewById(R.id.main_signupActivity_ly);
+        main_createActivity_ly = (LinearLayout) view.findViewById(R.id.main_createActivity_ly);
+        main_myinvite_ly = (LinearLayout) view.findViewById(R.id.main_myinvite_ly);
+        main_myshare_ly = (LinearLayout) view.findViewById(R.id.main_myshare_ly);
+        mine_other_ly = (LinearLayout) view.findViewById(R.id.mine_other_ly);
     }
 
     private void initView(){
@@ -95,6 +109,8 @@ public class MineFragment extends Fragment implements View.OnClickListener{
         mine_profit_tv= (TextView) view.findViewById(R.id.mine_profit_tv);
         contectionsCount_tv= (TextView) view.findViewById(R.id.contectionsCount_tv);
         mine_headeImg= (RoundRectImageView) view.findViewById(R.id.mine_headeImg);
+
+        main_jianghu_jiantou = (ImageView) view.findViewById(R.id.main_jianghu_jiantou);
 
 
     }
@@ -144,6 +160,24 @@ public class MineFragment extends Fragment implements View.OnClickListener{
                 transaction.add(R.id.deskFrameLayout,personInfoFragment);
                 transaction.addToBackStack("mineFragment");
                 transaction.commit();
+                break;
+            case R.id.main_jianghu_ly:
+                ObjectAnimator rotationAnimator = null;
+                ObjectAnimator translationAnimator = null;
+                AnimatorSet animatorSet = new AnimatorSet();
+
+                if (!rotation) {
+                    rotationAnimator = ObjectAnimator.ofFloat(main_jianghu_jiantou, "rotation", 0f, 90f);
+                    translationAnimator = ObjectAnimator.ofFloat(mine_other_ly, "translationY", 0, main_signupActivity_ly.getHeight() + main_createActivity_ly.getHeight());
+                    rotation = true;
+                } else {
+                    rotationAnimator = ObjectAnimator.ofFloat(main_jianghu_jiantou, "rotation", 90f, 0f);
+                    translationAnimator = ObjectAnimator.ofFloat(mine_other_ly, "translationY", main_signupActivity_ly.getHeight() + main_createActivity_ly.getHeight(), 0);
+                    rotation = false;
+                }
+                animatorSet.playTogether(rotationAnimator, translationAnimator);
+                animatorSet.setDuration(500);
+                animatorSet.start();
                 break;
         }
     }

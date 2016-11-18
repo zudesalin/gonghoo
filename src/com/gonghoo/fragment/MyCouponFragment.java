@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -89,13 +90,6 @@ public class MyCouponFragment extends BackHandledFragment {
         });
     }
 
-    @Override
-    public boolean onBackPressed() {
-        ((DeskTopActivity) getActivity()).iconChoolsed(2);
-        getActivity().getSupportFragmentManager().popBackStack();
-        return true;
-    }
-
     /**
      * 适配器
      */
@@ -141,5 +135,14 @@ public class MyCouponFragment extends BackHandledFragment {
             }
             return convertView;
         }
+    }
+
+    @Override
+    public boolean onBackPressed() {
+        ((DeskTopActivity) getActivity()).iconChoolsed(2);
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.show(new MineFragment(context));
+        transaction.commit();
+        return true;
     }
 }
