@@ -5,12 +5,17 @@
         android:layout_height="match_parent"
         android:background="#F4F4F4">
 
-        <FrameLayout
+        <!--<FrameLayout
                 android:layout_weight="1"
                 android:id="@+id/deskFrameLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-        </FrameLayout>
+        </FrameLayout>-->
+        <android.support.v4.view.ViewPager
+                android:id="@+id/deskFrameLayout"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v4.view.ViewPager>
         <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
