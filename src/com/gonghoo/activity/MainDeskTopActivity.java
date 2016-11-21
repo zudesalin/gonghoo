@@ -1,6 +1,5 @@
 package com.gonghoo.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,6 +9,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import com.gonghoo.R;
@@ -27,10 +27,12 @@ import java.util.List;
  */
 public class MainDeskTopActivity extends FragmentActivity implements BackHandledInterface {
     private ViewPager mViewPager;
+    private myFragmentPagerAdapter myFragmentPagerAdapter;
     Context context;
     TextView main_footer_jianghu_tv, main_footer_daxia_tv, main_footer_mine_tv;
     ImageButton main_footer_jianghu_bt, main_footer_daxia_bt, main_footer_mine_bt;
     List<Fragment> fragments = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,32 +79,52 @@ public class MainDeskTopActivity extends FragmentActivity implements BackHandled
 
             }
         });
-        FragmentManager mFragmentManager = getSupportFragmentManager();
-        mViewPager.setAdapter(new FragmentPagerAdapter(mFragmentManager) {
-            @Override
-            public Fragment getItem(int i) {
-                return fragments.get(i);
-            }
-
-            @Override
-            public int getCount() {
-                return fragments.size();
-            }
-        });
+        myFragmentPagerAdapter = new myFragmentPagerAdapter(getSupportFragmentManager());
+        mViewPager.setAdapter(myFragmentPagerAdapter);
     }
 
+    class myFragmentPagerAdapter extends FragmentPagerAdapter {
+        public myFragmentPagerAdapter(FragmentManager fragmentManager) {
+            super(fragmentManager);
+        }
+
+        @Override
+        public Fragment getItem(int i) {
+            return fragments.get(i);
+        }
+
+        @Override
+        public int getCount() {
+            return fragments.size();
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            //复写此方法避免页面切换刷新
+            //super.destroyItem(container, position, object);
+        }
+
+        @Override
+        public int getItemPosition(Object object) {
+            return POSITION_NONE;
+        }
+    }
     public void click(View v) {
         switch (v.getId()) {
             case R.id.main_footer_jianghu_layout:
                 selectFragment(0);
                 break;
             case R.id.main_footer_daxia_layout:
-                iconChoolsed(1);
+                selectFragment(1);
                 break;
             case R.id.main_footer_mine_layout:
                 selectFragment(2);
                 break;
         }
+    }
+
+    private interface coverView {
+        void coverview(myFragmentPagerAdapter myFragmentPagerAdapter);
     }
 
     public void iconChoolsed(int index) {

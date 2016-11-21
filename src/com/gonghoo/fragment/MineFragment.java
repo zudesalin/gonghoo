@@ -2,7 +2,6 @@ package com.gonghoo.fragment;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
-import android.animation.PropertyValuesHolder;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
@@ -18,7 +17,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.android.volley.VolleyError;
 import com.gonghoo.R;
 import com.gonghoo.utils.Configure;
@@ -27,10 +25,7 @@ import com.gonghoo.view.RoundRectImageView;
 import com.gonghoo.volleyInterface.VolleyInterface;
 import com.gonghoo.volleyInterface.VolleyRequest;
 import com.squareup.picasso.Picasso;
-import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.io.Serializable;
 
 /**
  * Created by zudesalin on 2016/11/15.
@@ -109,30 +104,31 @@ public class MineFragment extends Fragment implements View.OnClickListener{
         mine_profit_tv= (TextView) view.findViewById(R.id.mine_profit_tv);
         contectionsCount_tv= (TextView) view.findViewById(R.id.contectionsCount_tv);
         mine_headeImg= (RoundRectImageView) view.findViewById(R.id.mine_headeImg);
-
         main_jianghu_jiantou = (ImageView) view.findViewById(R.id.main_jianghu_jiantou);
-
-
     }
+
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            dialog.show();
+            VolleyRequest.jsonGet(context, url, null, "personInfo", new VolleyInterface(context, VolleyInterface.listener, VolleyInterface.errorListener) {
+                @Override
+                public void onSuccess(JSONObject jsonObject) {
+                    Message msg = Message.obtain();
+                    msg.obj = jsonObject;
+                    handler.sendMessage(msg);
+                }
+
+                @Override
+                public void onError(VolleyError volleyError) {
+                    Log.i("zzz", "请求错误");
+                }
+            });
+        }
+    };
     private void loadData(){
         initView();
-        dialog.show();
-        VolleyRequest.jsonGet(context, url, null, "personInfo", new VolleyInterface(context,VolleyInterface.listener,VolleyInterface.errorListener) {
-            @Override
-            public void onSuccess(JSONObject jsonObject) {
-                Message msg=Message.obtain();
-                msg.obj=jsonObject;
-
-                handler.sendMessage(msg);
-            }
-
-            @Override
-            public void onError(VolleyError volleyError) {
-                Log.i("zzz","请求错误");
-            }
-        });
-
-
+        handler.postDelayed(runnable, 500);
     }
 
     /**
@@ -157,8 +153,8 @@ public class MineFragment extends Fragment implements View.OnClickListener{
                 personInfoFragment.setArguments(bundle);
                 fm=getActivity().getSupportFragmentManager();
                 transaction=fm.beginTransaction();
-                transaction.add(R.id.deskFrameLayout,personInfoFragment);
-                transaction.addToBackStack("mineFragment");
+                transaction.replace(R.id.deskFrameLayout, personInfoFragment);
+                transaction.show(personInfoFragment);
                 transaction.commit();
                 break;
             case R.id.main_jianghu_ly:
