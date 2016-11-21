@@ -28,14 +28,16 @@ public class DeskTopActivity extends FragmentActivity implements BackHandledInte
     FragmentManager mFragmentManager;
     FragmentTransaction fragmentTransaction;
 
+    MineFragment mineFragment = null;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.desktop);
-        jianghuFragment=new JianghuFragment(context);
         mFragmentManager=getSupportFragmentManager();
         initView();
-        initFragment();
+        selectFragment(0);
     }
     private void initView(){
         main_footer_jianghu_bt= (ImageButton) findViewById(R.id.main_footer_jianghu_bt);
@@ -46,13 +48,50 @@ public class DeskTopActivity extends FragmentActivity implements BackHandledInte
         main_footer_daxia_tv= (TextView) findViewById(R.id.main_footer_daxia_tv);
         main_footer_mine_tv= (TextView) findViewById(R.id.main_footer_mine_tv);
     }
-    private void initFragment(){
+
+    private void selectFragment(Integer i) {
         fragmentTransaction=mFragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.deskFrameLayout,jianghuFragment,"jhFragment");
-        iconChoolsed(0);
-        fragmentTransaction.commit();
+        hideFragment();
+        iconChoolsed(i);
+        switch (i) {
+            case 0:
+                if (jianghuFragment == null) {
+                    jianghuFragment = new JianghuFragment(context);
+                    fragmentTransaction.add(R.id.deskFrameLayout, jianghuFragment, "jhFragment");
+                } else {
+                    fragmentTransaction.show(jianghuFragment);
+                }
+                fragmentTransaction.commit();
+                break;
+            case 1:
+                fragmentTransaction.add(R.id.deskFrameLayout, jianghuFragment, "jhFragment");
+                fragmentTransaction.show(jianghuFragment);
+                fragmentTransaction.commit();
+                break;
+            case 2:
+                if (mineFragment == null) {
+                    mineFragment = new MineFragment(context);
+                    fragmentTransaction.add(R.id.deskFrameLayout, mineFragment, "mineFragment");
+                } else {
+                    fragmentTransaction.show(jianghuFragment);
+                }
+                fragmentTransaction.commit();
+                break;
+
+        }
+
+
     }
 
+    private void hideFragment() {
+        if (jianghuFragment != null) {
+            fragmentTransaction.hide(jianghuFragment);
+        }
+        if (mineFragment != null) {
+            fragmentTransaction.hide(mineFragment);
+        }
+
+    }
     public void iconChoolsed(int index){
         main_footer_jianghu_tv.setTextColor(Color.parseColor("#999999"));
         main_footer_daxia_tv.setTextColor(Color.parseColor("#999999"));
@@ -80,27 +119,15 @@ public class DeskTopActivity extends FragmentActivity implements BackHandledInte
      * 导航点击事件
      */
     public void click(View v){
-
         switch (v.getId()){
             case R.id.main_footer_jianghu_layout:
-                initFragment();
-                iconChoolsed(0);
+                selectFragment(0);
                 break;
             case R.id.main_footer_daxia_layout:
                 iconChoolsed(1);
                 break;
             case R.id.main_footer_mine_layout:
-                fragmentTransaction=mFragmentManager.beginTransaction();
-                MineFragment mineFragment=null;
-                if(mineFragment==null){
-                    mineFragment=new MineFragment(context);
-                }
-                fragmentTransaction.add(R.id.deskFrameLayout,mineFragment,"mineFragment");
-                fragmentTransaction.addToBackStack("jhFragment");
-                //fragmentTransaction.attach(mineFragment);
-                iconChoolsed(2);
-                fragmentTransaction.commit();
-                iconChoolsed(2);
+                selectFragment(2);
                 break;
         }
     }
